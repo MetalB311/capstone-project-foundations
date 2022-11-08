@@ -1,0 +1,45 @@
+h1 {
+    font-size: 100PX;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 15px;
+    
+    font-weight: bold;
+    font-size: 20px;
+    background: teal;
+    color: white;
+    margin-left: 20px;
+    vertical-align: middle;
+}
+
+body {
+    margin: 20;
+    padding: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(lightning2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:20px;
+    font-family: sans-serif;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    margin: 20px;
+    padding: 5px;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
