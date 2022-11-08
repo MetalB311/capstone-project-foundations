@@ -35,6 +35,6 @@ function addSong (event) {
 }
 
 
-div1.addEventListener('click', getSong)
-div1.addEventListener('click', showAllSongs)
+// div1.addEventListener('click', getSong)
+// div1.addEventListener('click', showAllSongs)
 form.addEventListener('submit', addSong)

@@ -3,6 +3,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
+    text-Shadow: 10px 10px 15px greenyellow
 }
 
 
@@ -14,8 +15,8 @@ button {
     
     font-weight: bold;
     font-size: 20px;
-    background: teal;
-    color: white;
+    background: greenyellow;
+    color: black;
     margin-left: 20px;
     vertical-align: middle;
 }
@@ -42,4 +43,29 @@ input {
     flex-direction: column; 
     justify-content: center;
     align-items: center;
+    background-color: greenyellow;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+form {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* this is your new songs that are added */
+span {
+    font-weight: bold;
+    background-color: greenyellow;
+    font-weight: bold;
+    font-size: 20px;
 }
