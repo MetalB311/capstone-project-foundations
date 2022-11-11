@@ -1,12 +1,12 @@
 const form = document.querySelector('form')
 const div1 = document.querySelector('div1')
 
-
+ 
 const getSong = () => {
     axios.get("http://localhost:6660/getsong")
     .then((res) => {
         // in here what are we doing with the song, that we GOT
-        autoPlay.res.data
+        res.data.play()
     })
     .catch((err) => {
         console.log(err)

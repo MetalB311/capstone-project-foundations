@@ -6,7 +6,7 @@ let app = express()
 app.use(cors())
 app.use(express.json())
 
-const {getSong} = require ('./controller')
+const {getSong} = require ('../client/controller')
 
 app.get('/getsong', getSong)
 
