@@ -1,15 +1,15 @@
-const express = require('express')
-const cors = require('cors')
+const express = require('express');
+const cors = require('cors');
+const app = express();
+app.use(cors());
+app.use(express.json());
 
-let app = express()
+const {getSong} = require ('./controller')
 
-app.use(cors())
-app.use(express.json())
-
-const {getSong} = require ('../client/controller')
+// app.use(express.static('client/songs'))
+app.use(express.static('client'))
 
 app.get('/getsong', getSong)
-
 
 
 

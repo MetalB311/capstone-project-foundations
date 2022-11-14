@@ -1,17 +1,30 @@
 const form = document.querySelector('form')
 const div1 = document.querySelector('div1')
+const getsong = document.querySelector('#getsong')
+const randAudio = document.querySelector('#randAudio')
 
+songArray = ['client/01_Laid_to_Rest.mp3', 'client/01_Walk_With_Me_In_Hell.mp3' ]
  
 const getSong = () => {
-    axios.get("http://localhost:6660/getsong")
-    .then((res) => {
-        // in here what are we doing with the song, that we GOT
-        res.data.play()
-    })
-    .catch((err) => {
-        console.log(err)
-    })
+    // let songs = document.querySelectorAll('audio')
+        
+        // autoplay.songs
+        let randomSongFilePath = songArray[Math.floor(Math.random() * songArray.length)]
+    console.log(randomSongFilePath)
+randAudio.src = randomSongFilePath
+    randAudio.play()
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -35,9 +48,10 @@ function addSong (event) {
     let list = document.querySelector('ul')
     list.appendChild(song)
     inputField.value= ''
+    alert('song added')
 }
 
 
-div1.addEventListener('click', getSong)
+getsong.addEventListener('click', getSong)
 div1.addEventListener('click', showAllSongs)
 form.addEventListener('submit', addSong)
