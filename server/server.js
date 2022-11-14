@@ -3,11 +3,13 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 app.use(express.json());
+const path = require('path')
 
 const {getSong} = require ('./controller')
 
 // app.use(express.static('client/songs'))
-app.use(express.static('client'))
+app.use('/client', express.static(path.join(__dirname, '../client')))
+
 
 app.get('/getsong', getSong)
 
