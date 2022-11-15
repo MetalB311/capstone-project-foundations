@@ -68,4 +68,13 @@ span {
     background-color: greenyellow;
     font-weight: bold;
     font-size: 20px;
+    max-width: fit-content;
+}
+
+li {
+    font-weight: bold;
+    background-color: greenyellow;
+    font-weight: bold;
+    font-size: 20px;
+    max-width: fit-content;
 }
