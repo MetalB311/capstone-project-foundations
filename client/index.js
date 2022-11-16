@@ -9,7 +9,7 @@ let list = document.querySelector('ul')
 
 
 
-songArray = ['Lamb_Of_God_Laid_to_Rest.mp3', 'Lamb_Of_God_Walk_With_Me_In_Hell.mp3', '02_Nothing_Left.m4a', 'Lamb_Of_God_11th_Hour.mp3', 'Lamb_Of_God_Fake_Messiah.mp3', 'Lamb_Of_God_New_Colossal_Hate.m4a', '08_Through_Struggle.mp3', '09_The_Beginning.mp3' ]
+songArray = ['Lamb_Of_God_Laid_to_Rest.mp3', 'Lamb_Of_God_Walk_With_Me_In_Hell.mp3', 'Lamb_Of_God_11th_Hour.mp3', 'Lamb_Of_God_Fake_Messiah.mp3', 'Lamb_Of_God_New_Colossal_Hate.m4a', 'As_I_Lay_Dying_Nothing_Left.m4a', 'As_I_Lay_Dying_Through_Struggle.mp3', 'As_I_Lay_Dying_The_Beginning.mp3' ]
 
 const getSong = () => {
         let randomSongFilePath = songArray[Math.floor(Math.random() * songArray.length)]
