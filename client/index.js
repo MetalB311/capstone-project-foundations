@@ -43,6 +43,7 @@ function addSong (event) {
     list.appendChild(song)
     inputField.value= ''
     alert('song added')
+    songArray.push(songTitle.textContent)
 }
 
 

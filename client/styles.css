@@ -1,5 +1,6 @@
-h1 {
-    font-size: 100PX;
+header {
+    font-size: 120PX;
+    font-weight: bolder;
     display: flex;
     align-items: center;
     justify-content: center;
