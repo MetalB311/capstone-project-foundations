@@ -7,7 +7,9 @@ const allsongs = document.querySelector('#allsongs')
 
 let list = document.querySelector('ul')
 
-songArray = ['01_Laid_to_Rest.mp3', '01_Walk_With_Me_In_Hell.mp3', '02_Nothing_Left.m4a', '04_11th_Hour.mp3', '05_Fake_Messiah.mp3', '05_New_Colossal_Hate.m4a', '08_Through_Struggle.mp3', '09_The_Beginning.mp3' ]
+
+
+songArray = ['Lamb_Of_God_Laid_to_Rest.mp3', 'Lamb_Of_God_Walk_With_Me_In_Hell.mp3', '02_Nothing_Left.m4a', 'Lamb_Of_God_11th_Hour.mp3', 'Lamb_Of_God_Fake_Messiah.mp3', 'Lamb_Of_God_New_Colossal_Hate.m4a', '08_Through_Struggle.mp3', '09_The_Beginning.mp3' ]
 
 const getSong = () => {
         let randomSongFilePath = songArray[Math.floor(Math.random() * songArray.length)]
@@ -23,7 +25,7 @@ const stopSong = () => {
 
 
 function showAllSongs (event) {
-    event.preventDefault()
+    // event.preventDefault()
     for (let i=0; i < songArray.length; i++){
         let song = document.createElement('li')
         song.innerHTML = songArray[i]
