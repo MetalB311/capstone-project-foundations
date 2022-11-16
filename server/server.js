@@ -7,7 +7,7 @@ const path = require('path')
 
 const {getSong} = require ('./controller')
 
-// app.use(express.static('client/songs'))
+
 app.use('/client', express.static(path.join(__dirname, '../client')))
 
 

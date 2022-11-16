@@ -38,7 +38,6 @@ function addSong (event) {
     let song = document.createElement('li')
     let songTitle = document.createElement('span')
     songTitle.textContent = inputField.value
-    // I believe ^^^^^^^ that needs to be a file, not textcontent
     song.appendChild(songTitle)
     list.appendChild(song)
     inputField.value= ''
