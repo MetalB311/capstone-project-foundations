@@ -25,7 +25,7 @@ const stopSong = () => {
 
 
 function showAllSongs (event) {
-    // event.preventDefault()
+    list.innerHTML = ''
     for (let i=0; i < songArray.length; i++){
         let song = document.createElement('li')
         song.innerHTML = songArray[i]
